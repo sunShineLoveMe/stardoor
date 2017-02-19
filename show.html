@@ -2,87 +2,45 @@
 <html>
 <head>
 <title>PGCI星球门</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-
 <!--轮滚js-->
 <link href="gd/style.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/show.css" rel="stylesheet" type="text/css" media="all"/>
 <script type="text/javascript" src="gd/jquery.js"></script>
 <script type="text/javascript" src="gd/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="js/show.js"></script>
 <!--轮滚js结束-->
 <script src="js/menu_jquery.js"></script>
 
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-
-
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-
-	<script type="text/javascript">
-$(document).ready(function(){
-
-	$(".index_focus").hover(function(){
-		$(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
-	},function(){
-		$(this).find(".index_focus_pre,.index_focus_next").fadeOut()
-	});
-	
-	$(".index_focus").slide({
-		titCell: ".slide_nav a ",
-		mainCell: ".bd ul",
-		delayTime: 500,
-		interTime: 3500,
-		prevCell:".index_focus_pre",
-		nextCell:".index_focus_next",
-		effect: "fold",
-		autoPlay: true,
-		trigger: "click",
-		startFun:function(i){
-			$(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
-			$(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
-		}
-	});
-
-});
-</script>
-
-
+<!-- <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script> -->
 </head>
 <body>
 <nav>
-  <div class="top-menu" style="text-align:center;background:#23635a;height:45px;line-height:45px;">					
-					<ul>
-						<li ><a href="home.html" style="font-size:1em;padding:0em 2.5em;">HOME</a> </li>
-						<li ><a href="about.html" style="font-size:1em;padding:0em 2.5em;">ABOUT</a> </li>
-						<li><a href="new.html" style="font-size:1em;padding:0em 2.5em;">NEWS</a></li>
-						<li><a href="show.html" style="font-size:1em;padding:0em 2.5em;">SHOW</a></li>
-						<li><a href="#" style="font-size:1em;padding:0em 2.5em;">中英文切换</a></li>
-					</ul>
+  <div class="top-menu" style="text-align:center;background:#23635a;height:45px;line-height:45px;">
+		<ul>
+			<li ><a href="home.html" style="font-size:1em;padding:0em 2.5em;">HOME</a> </li>
+			<li ><a href="about.html" style="font-size:1em;padding:0em 2.5em;">ABOUT</a> </li>
+			<li><a href="new.html" style="font-size:1em;padding:0em 2.5em;">NEWS</a></li>
+			<li><a href="show.html" style="font-size:1em;padding:0em 2.5em;">SHOW</a></li>
+			<li><a href="#" style="font-size:1em;padding:0em 2.5em;">中英文切换</a></li>
+		</ul>
 		  
 	</div>
 </nav>
-<div class="index_focus" >
-
+<div class="index_focus">
 	<a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
 	<a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
-	
 	<div class="bd">
 		<ul>
 			<li>
@@ -115,16 +73,13 @@ $(document).ready(function(){
 			
 		</ul>
 	</div>
-	
 	<div class="slide_nav">
 		<a href="javascript:;">●</a>
 		<a href="javascript:;">●</a>
 		<a href="javascript:;">●</a>
-		
 	</div>
-	
 </div>
- </div>
+</div>
 </div>
   <!--footer start here-->
 <div class="footer">
