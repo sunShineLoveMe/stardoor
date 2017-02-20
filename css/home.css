@@ -19,3 +19,11 @@
   top: 250px;
   left: 60px;
 }
+
+.tooltip_templates {
+  display: none;
+}
+
+#tooltip_create a {
+  text-decoration: none;
+}

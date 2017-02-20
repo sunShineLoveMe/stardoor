@@ -1,3 +1,6 @@
 jQuery(document).ready(function($) {
-	 $('.tooltip').tooltipster();
+	 $('.tooltip').tooltipster({
+	 	interactive: true,
+	 });
+
 });
