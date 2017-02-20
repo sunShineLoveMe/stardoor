@@ -28,3 +28,11 @@
 	background-size: 30% 70%;
 	background-position: 0 6px;
 }
+
+.inter-icon {
+	width: 30px;
+	height: 30px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
