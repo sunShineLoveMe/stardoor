@@ -42,7 +42,10 @@ a:hover {
  background: url(../images/new.jpg)no-repeat center;
  min-height:480px;
 }
-
+.header2 {
+  background: url(../images/new2.jpg)no-repeat center;
+  min-height: 400px;
+}
 .header3 {
  background: url(../images/art1.png)no-repeat center;
  min-height:400px;
