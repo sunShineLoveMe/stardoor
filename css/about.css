@@ -24,3 +24,9 @@
     font-size:0.9em !important;
     padding:0em 1.5em !important;
 }
+
+.keep-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

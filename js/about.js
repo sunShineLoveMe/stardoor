@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
   var param = getQueryString("param");
   $('.dropdown-toggle').dropdown();
   var mao = $("#" + param); //获得锚点
@@ -15,6 +16,15 @@ jQuery(document).ready(function($) {
     $('html,body').animate({
       scrollTop: $(this.hash).offset().top
     }, 1000);
+  });
+
+  $(document).scroll(function(){
+    var scrollTop = $(this).scrollTop();
+    if(scrollTop >=45){
+      $("body >.div1").addClass("keep-top");
+    }else {
+      $("body >.div1").removeClass("keep-top");
+    }
   });
 
   $('a[href*=#]').click(function() {
