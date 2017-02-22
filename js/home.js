@@ -5,5 +5,14 @@ jQuery(document).ready(function($) {
 	 $('.dropdown-toggle').dropdown();
 	 $('.tooltip').tooltipster({
 	 	interactive: true,
+	 	contentCloning: true,
+	 	functionBefore: function(instance, helper){
+	 		var type = $(instance._$origin[0].attributes[2]).val();
+	 		if(type == "create"){
+	 			$("#tooltip_create_a").attr("href","about.html?param=atr3_12_b");
+	 		}else if(type == "show"){
+	 			$("#tooltip_create_a").attr("href","show.html");
+	 		}
+	 	}
 	 });
 });

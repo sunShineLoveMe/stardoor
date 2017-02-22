@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 .common-menu {
-  text-align:center;
-  background:#23635a;
+  text-align: center;
+  background: #231815;
   height:45px;
   line-height:45px;
 }
@@ -35,4 +35,21 @@
     position: absolute;
     top: 7px;
     left: 10px;
+}
+
+.menu-pic {
+    background: url(../images/about/title_flag_bg.png) no-repeat center;
+    background-size: 100%;
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    top: 25px;
+    left: 45%;
+}
+
+.menu-flag {
+	position: absolute;
+	position: absolute;
+    left: 29%;
+    top: -10px
 }

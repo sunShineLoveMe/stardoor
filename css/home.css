@@ -21,6 +21,14 @@
   left: 60px;
 }
 
+.home-body-show {
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  top: 80px;
+  right: 220px;
+}
+
 .tooltip_templates {
   display: none;
 }

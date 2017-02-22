@@ -18,19 +18,18 @@
 <script type="text/javascript" src="js/easing.js"></script> -->
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
- 
-<script type="application/x-javascript">
-   addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-</script>
 </head>
 <body>
+<div class="menu-pic">
+	<img class="menu-flag" src="images/about/flag.png">
+</div>
 <nav>
    <div class="top-menu common-menu">
 		<ul>
-			<li ><a class="common-nav" href="home.html">HOME</a> </li>
-			<li ><a class="common-nav" href="about.html">ABOUT</a> </li>
-			<li><a class="common-nav" href="new.html">NEWS</a></li>
-			<li><a class="common-nav" href="show.html">SHOW</a></li>
+			<li><a class="common-nav" href="home.html">HOME</a> </li>
+			<li><a class="common-nav" href="about.html">ABOUT</a> </li>
+			<li><a class="common-nav" style="right: -120%;" href="new.html">NEWS</a></li>
+			<li><a class="common-nav" style="right: -120%;" href="show.html">SHOW</a></li>
 			<li class="dropdown" style="right: -25%;"><a class="common-nav" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img class="inter-icon" src="images/china.png">
         <span>中国</span>
@@ -45,14 +44,20 @@
 </nav>
 <div class="home-bg">
 	<img src="images/bann.jpg">
-	<div class="tooltip home-body-create" data-tooltip-content="#tooltip_create"></div>
+	<div class="tooltip home-body-create" data-tooltip-content="#tooltip_create" data-type="create">
+	</div>
+	<div class="tooltip home-body-show" data-tooltip-content="#tooltip_create" data-type="show"></div>
 	<!-- <div class="tooltip home-body-create" title="ATR创造力"> -->
 </div>
 <div class="tooltip_templates">
     <span id="tooltip_create">
-        <a href="about.html?param=atr3_12_b"><strong>ATR创造力</strong><a>
+        <a id="tooltip_create_a"><strong>ATR创造力</strong><a>
     </span>
 </div>
-
+<!-- <div class="tooltip_templates">
+    <span id="tooltip_show">
+        <a href="show.html"><strong>ATRdfgdf创造力</strong><a>
+    </span>
+</div> -->
 </body>
 </html>
