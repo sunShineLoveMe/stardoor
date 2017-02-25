@@ -31,3 +31,24 @@
     width: 100%;
 }
 
+.bg-banner {
+    text-align:center;
+    background:#fff;
+    height:80px;
+    line-height:80px;
+    /*color: #000 !important;*/
+}
+
+.div2 ul li a {
+    color: #000;
+}
+
+.checked {
+    background-color: #3AB199;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.top-menu ul li a:hover{
+    color:#000;
+}

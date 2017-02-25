@@ -32,6 +32,9 @@
 .tooltip_templates {
   display: none;
 }
+.tooltip_templates_show {
+  display: none;
+}
 
 #tooltip_create a {
   text-decoration: none;

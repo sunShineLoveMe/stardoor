@@ -88,7 +88,7 @@ a:hover {
 .top-menu ul li{
 	display: inline-block;
 }
-.top-menu ul li  a:hover,.top-menu ul li.active a{
+.top-menu ul li a:hover,.top-menu ul li.active a{
 	color:#3AB199;
 }
 
@@ -102,7 +102,7 @@ a:hover {
 .top-nav span.menu{
 	display: none;
 }
-.top-menu ul li  a {
+.top-menu ul li a {
 	position: relative;
 	display: inline-block;
 	outline: none;
@@ -498,7 +498,7 @@ input:focus {
   
 }
 .footer-main h4.Contact_information{
- margin-bottom: 15px;color:#f00;
+ margin-bottom: 15px;color:#3AB199;
 }
 .footer-main .col-md-3{
  text-align: center;

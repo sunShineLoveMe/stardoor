@@ -5,14 +5,27 @@ jQuery(document).ready(function($) {
 	 $('.dropdown-toggle').dropdown();
 	 $('.tooltip').tooltipster({
 	 	interactive: true,
-	 	contentCloning: true,
-	 	functionBefore: function(instance, helper){
-	 		var type = $(instance._$origin[0].attributes[2]).val();
-	 		if(type == "create"){
-	 			$("#tooltip_create_a").attr("href","about.html?param=atr3_12_b");
-	 		}else if(type == "show"){
-	 			$("#tooltip_create_a").attr("href","show.html");
-	 		}
-	 	}
+	 	multiple: true
+	 	// contentCloning: true,
+	 	// functionBefore: function(instance, helper){
+	 	// 	var type = $(instance._$origin[0].attributes[2]).val();
+	 	// 	if(type == "create"){
+	 	// 		$("#tooltip_create_a").attr("href","about.html?param=atr3_12_b");
+	 	// 		$("#tooltip_create_a").click();
+
+	 	// 	}else if(type == "show"){
+	 	// 		$("#tooltip_create_a").attr("href","show.html");
+	 	// 	}
+	 	// }
 	 });
+	 // $('#trigger_show').tooltipster();
+	 // $('#trigger_show').tooltipster({
+	 // 	interactive: true
+	 // 	// functionInit: function(instance, helper){
+  //  //      var content = $(helper.origin).find('#tooltip_show').detach();
+  //  //      instance.content(content);
+  //  //  	}
+	 // });
+
+	 // $('#trigger_show').tooltipster('open').tooltipster('content', 'My new content');
 });
