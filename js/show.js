@@ -1,5 +1,11 @@
 var t = n = 0,count;
 jQuery(document).ready(function($) {
+	$('.hiSlider').hiSlider({
+		isFlexible: true,
+		startSlide: 0,
+		intervalTime: 3000,
+		isFullScreen: true
+	});
 	count = $("#banner_list a").length;
 	$('.dropdown-toggle').dropdown();
 	$("#banner_list a:not(:first-child)").hide();
