@@ -5,7 +5,9 @@ jQuery(document).ready(function($) {
 	 $('.dropdown-toggle').dropdown();
 	 $('.tooltip').tooltipster({
 	 	interactive: true,
-	 	multiple: true
+	 	theme: ['tooltipster-noir', 'tooltipster-noir-customized'],
+	 	arrow: false
+	 	// multiple: true
 	 	// contentCloning: true,
 	 	// functionBefore: function(instance, helper){
 	 	// 	var type = $(instance._$origin[0].attributes[2]).val();

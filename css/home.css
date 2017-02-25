@@ -39,3 +39,24 @@
 #tooltip_create a {
   text-decoration: none;
 }
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+  position: absolute;
+  background: grey;
+  left: 1px;
+  /*margin-left: 140px;*/
+  top: -30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-content {
+  color: blue;
+  padding: 8px;
+}
+
+.tooltipster-sidetip.tooltipster-noir .tooltipster-arrow{
+  height:0px;
+  margin-left:-11px;
+  width:0px
+}
