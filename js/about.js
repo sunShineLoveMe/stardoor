@@ -1,15 +1,25 @@
 jQuery(document).ready(function($) {
 
   var param = getQueryString("param");
-  $('.dropdown-toggle').dropdown();
-  var mao = $("#" + param); //获得锚点
-  if (mao.length > 0) { //判断对象是否存在
-    var pos = mao.offset().top;
-    var poshigh = mao.height();
-    $("html,body").animate({
-      scrollTop: pos - poshigh - 30
-    }, 1000);
+  if(param){
+    $('div[data-index]').each(function(i, item){
+       var index = i+1;
+       if(index == param){
+        $(item).fadeIn("slow").fadeIn(500);
+       }else {
+        $(item).fadeOut("slow").fadeOut(500);
+       }
+    });
   }
+  // $('.dropdown-toggle').dropdown();
+  // var mao = $("#" + param); //获得锚点
+  // if (mao.length > 0) { //判断对象是否存在
+  //   var pos = mao.offset().top;
+  //   var poshigh = mao.height();
+  //   $("html,body").animate({
+  //     scrollTop: pos - poshigh - 30
+  //   }, 1000);
+  // }
 
   $(".scroll").click(function(event) {
     event.preventDefault();
@@ -28,17 +38,27 @@ jQuery(document).ready(function($) {
   });
 
   $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top - 55;
-        $('html,body').animate({
-          scrollTop: targetOffset
-        }, 1000);
-        return false;
-      }
-    }
+    var indexStr = $(this)[0].hash.split("#atr")[1];
+    $('div[data-index]').each(function(i, item){
+       var index = i+1;
+       if(index == indexStr){
+        // $(item).show();
+        $(item).fadeIn("slow").fadeIn(500);
+       }else {
+        // $(item).hide();
+        $(item).fadeOut("slow").fadeOut(500);
+       }
+    });
+    //   var $target = $(this.hash);
+    //   $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+    //   if ($target.length) {
+    //     var targetOffset = $target.offset().top - 55;
+    //     $('html,body').animate({
+    //       scrollTop: targetOffset
+    //     }, 1000);
+    //     return false;
+    //   }
+    // }
   });
 
   $('a[class="nav"]').click(function() {

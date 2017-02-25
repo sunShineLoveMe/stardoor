@@ -52,3 +52,25 @@
 .top-menu ul li a:hover{
     color:#000;
 }
+
+.common-pic {
+    background-size: cover;
+    background-position-y:0px;
+}
+
+.nav-img1 {
+     background: url(../images/art7.jpg)no-repeat center;
+     min-height:2280px;
+     background-size: cover;
+     background-position-y: 0;
+}
+.nav-img2 {
+     background: url(../images/art8.jpg)no-repeat center;
+     min-height:2300px;
+     background-size: cover;
+     background-position-y: 0;
+}
+
+.no-display {
+    display: none;
+}
