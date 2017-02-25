@@ -1,5 +1,11 @@
 var t = n = 0,count;
 jQuery(document).ready(function($) {
+	var hash = getCookie("hash");
+	 if(hash == "show"){
+	 	$("#about_html").css("color", "#3AB199");
+	 }else {
+	 	setCookie("hash", "show");
+	 }
 	$('.hiSlider').hiSlider({
 		isFlexible: true,
 		startSlide: 0,

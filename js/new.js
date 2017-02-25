@@ -1,4 +1,10 @@
 jQuery(document).ready(function($) {
+  var hash = getCookie("hash");
+   if(hash == "new"){
+    $("#about_html").css("color", "#3AB199");
+   }else {
+    setCookie("hash", "new");
+   }
  $('.dropdown-toggle').dropdown();
  $(".scroll").click(function(event){
         event.preventDefault();

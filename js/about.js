@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
-
+  var hash = getCookie("hash");
+   if(hash == "about"){
+    $("#about_html").css("color", "#3AB199");
+   }else {
+    setCookie("hash", "about");
+   }
   var param = getQueryString("param");
   if(param){
     $('div[data-index]').each(function(i, item){

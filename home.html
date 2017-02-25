@@ -15,14 +15,13 @@
 <link href="css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/common.css" rel="stylesheet" type="text/css" media="all"/>
-
+<script src="js/cookie.js"></script>
 <script src="js/jquery-1.11.0.min.js"></script>
 <!-- <script src="js/menu_jquery.js"></script> -->
 <script src="js/tooltipster.bundle.min.js"></script>
-<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/bootstrap.js"></script>
 <!-- <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script> -->
-<script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 </head>
 <body>
@@ -33,14 +32,15 @@
    <div class="top-menu common-menu">
 		<ul>
 			<li><a class="common-nav" href="home.html">HOME</a> </li>
-			<li><a class="common-nav" href="about.html">ABOUT</a> </li>
+			<li><a class="common-nav" id="about_html" href="about.html">ABOUT</a> </li>
 			<li><a class="common-nav" style="right: -120%;" href="new.html">NEWS</a></li>
 			<li><a class="common-nav" style="right: -120%;" href="show.html">SHOW</a></li>
 			<li class="dropdown" style="right: -25%;"><a class="common-nav" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		        <img class="inter-icon" src="images/china.png">
-		        <span>中国</span>
-				<span class="caret"></span></a>
+        <img class="inter-icon" src="images/china.png">
+        <span>中国</span>
+			  <span class="caret"></span></a>
 				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<!-- <li class="drop-china"><a class="dropdown-label">中国</a></li> -->
 				    <li class="drop-america"><a class="dropdown-label">美国</a></li>
 				</ul>
 			</li>
@@ -52,7 +52,6 @@
 	<div class="tooltip home-body-create" data-tooltip-content="#tooltip_create">
 	</div>
 	<div class="tooltip home-body-show" data-tooltip-content="#tooltip_show"></div>
-	<!-- <div class="tooltip home-body-create" title="ATR创造力"> -->
 </div>
 <div class="tooltip_templates tooltip">
     <span id="tooltip_create">
