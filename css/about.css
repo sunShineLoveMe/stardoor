@@ -34,8 +34,8 @@
 .bg-banner {
     text-align:center;
     background:#fff;
-    height:80px;
-    line-height:80px;
+    height:100px;
+    line-height:100px;
     /*color: #000 !important;*/
 }
 
@@ -49,9 +49,9 @@
     padding: 0 10px;
     border-radius: 5px;
 }
-.top-menu ul li a:hover{
+/*.top-menu ul li a:hover{
     color:#000;
-}
+}*/
 
 .common-pic {
     background-size: cover;
