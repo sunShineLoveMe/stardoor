@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+html, body{
+  font-family: 'Roboto-Regular';
+   font-size: 100%;
+   background:#fff;
+   overflow-y: hidden;
+}
+
 .home-bg {
   position: absolute;
   width: 100%;
