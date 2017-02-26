@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PGCI星球门</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/home.css" rel="stylesheet" type="text/css"/>
+<link href="css/common.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=c93e1e293e5b1c3dc581f3ff633144d3&plugin=AMap.Autocomplete,AMap.PlaceSearch,AMap.Walking,AMap.Riding"></script>
+<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+<script src="js/map.js"></script>
+</head>
+<body>
+<div class="menu-pic" style="z-index: 11;">
+    <img class="menu-flag" src="images/about/flag.png">
+</div>
+<nav>
+   <div class="top-menu common-menu">
+        <ul>
+            <li><a class="common-nav" href="home.html">HOME</a> </li>
+            <li><a class="common-nav" id="about_html" href="about.html">ABOUT</a> </li>
+            <li><a class="common-nav" style="right: -120%;" href="new.html">NEWS</a></li>
+            <li><a class="common-nav" style="right: -120%;" href="show.html">SHOW</a></li>
+            <li class="dropdown" style="right: -25%;"><a class="common-nav" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="inter-icon" src="images/china.png">
+        <span>中国</span>
+              <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <!-- <li class="drop-china"><a class="dropdown-label">中国</a></li> -->
+                    <li class="drop-america"><a class="dropdown-label">美国</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- <div id="myPageTop">
+    <div class="pageShow">
+        <h3>搜索地址</h3>
+        <input id="tipinput" placeholder="模糊地址搜索">
+        <h3>搜索行车路径</h3>
+        <input id="star" placeholder="行车开始地址">
+        <span>—&nbsp;—</span>
+        <input id="end" placeholder="行车结束地址">
+        <span>—&nbsp;—</span>
+        <a id="car" href="javascript:void(0);">
+            点击搜索
+        </a>
+
+        <h3>搜索骑行路径</h3>
+        <input id="cStar" placeholder="骑行开始地址">
+        <span>—&nbsp;—</span>
+        <input id="cEnd" placeholder="骑行结束地址">
+        <span>—&nbsp;—</span>
+        <a id="riding" href="javascript:void(0);">
+            点击搜索
+        </a>
+
+        <h3>搜索步行路径</h3>
+        <input id="wStar" placeholder="步行开始地址">
+        <span>—&nbsp;—</span>
+        <input id="wEnd" placeholder="步行结束地址">
+        <span>—&nbsp;—</span>
+        <a id="walk" href="javascript:void(0);">
+            点击搜索
+        </a>
+        <div style="margin:20px 0;">
+            <a id="box" href="javascript:void(0);">
+                鼠标右键拖取选框放大地图
+            </a>
+            <a id="meter" href="javascript:void(0);">
+                测量距离
+            </a>
+        </div>
+    </div>
+</div> -->
+<div id="container" style="top: 46px;"></div>
+<div id="panel"></div>
+</body>
+</html>
