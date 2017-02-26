@@ -16,16 +16,17 @@
 <link href="css/show.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/slide.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/common.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="css/jquery.hiSlider.css" rel="stylesheet" />
+<link href="css/slider.css" rel="stylesheet" />
 <script src="js/jquery-1.11.0.min.js"></script>
 <!-- <script type="text/javascript" src="gd/jquery.js"></script>
 <script type="text/javascript" src="gd/jquery.SuperSlide.js"></script> -->
-<script src="js/jquery.hiSlider.js"></script>
+<!-- <script src="js/jquery.hiSlider.js"></script> -->
 <script type="text/javascript" src="js/show.js"></script>
 <script src="js/bootstrap.js"></script>
 <!--轮滚js结束-->
 <script src="js/menu_jquery.js"></script>
 <script src="js/cookie.js"></script>
+<script src="js/slide.js"></script>
 </head>
 <body>
 <div class="menu-pic" style="z-index: 1">
@@ -43,32 +44,41 @@
         <span>中国</span>
 			  <span class="caret"></span></a>
 				<ul class="dropdown-menu" aria-labelledby="dLabel">
-					<!-- <li class="drop-china"><a class="dropdown-label">中国</a></li> -->
 				    <li class="drop-america"><a class="dropdown-label">美国</a></li>
 				</ul>
 			</li>
 		</ul>
 	</div>
 </nav>
+<div class="DB_tab25">
+	<ul class="DB_bgSet">
+		<li class="DB_bgSet_img1"></li>
+		<li class="DB_bgSet_img2"></li>
+		<li class="DB_bgSet_img3"></li>
+	</ul>
 
-<div>
+	<ul class="DB_imgSet">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<div class="DB_menuWrap">
+		<ul class="DB_menuSet">
+			<li><img src="images/btn_off.png" alt=""></li>
+			<li><img src="images/btn_off.png" alt=""></li>
+			<li><img src="images/btn_off.png" alt=""></li>
+		</ul>
+		<div class="DB_next"><img src="images/nextArrow.png" alt="NEXT"></div>
+		<div class="DB_prev"><img src="images/prevArrow.png" alt="PREV"></div>
+	</div>
+</div>
+<!-- <div>
 	<ul class="hiSlider">
 	    <li class="hiSlider-item"><img src="images/1.jpg" alt="11111"></li>
 	    <li class="hiSlider-item"><img src="images/2.jpg" alt="22222"></li>
 	    <li class="hiSlider-item"><img src="images/3.jpg" alt="33333"></li>
 	</ul>
-</div>
-<!-- <div id="banner">
-    <ul>
-        <li class="on">1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
-    <div id="banner_list">
-        <a href="#"><img src="images/1.jpg" title="趣味性" alt="趣味性"></a>
-        <a href="#"><img src="images/2.jpg" title="艺术性" alt="艺术性"></a>
-        <a href="#"><img src="images/3.jpg" title="表现手法" alt="表现手法"></a>
-    </div>
 </div> -->
 
   <!--footer start here-->

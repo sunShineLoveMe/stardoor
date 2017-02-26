@@ -4,3 +4,22 @@
 	width: 100%;
 	height: 520px;
 }
+
+.DB_bgSet_img1 {
+	width: 100%;
+	height: 520px;
+	background:url(../images/1.jpg) no-repeat;
+	background-size: 100% 520px;
+}
+.DB_bgSet_img2 {
+	width: 100%;
+	height: 520px;
+	background:url(../images/2.jpg) no-repeat;
+	background-size: 100% 520px;
+}
+.DB_bgSet_img3 {
+	width: 100%;
+	height: 520px;
+	background:url(../images/3.jpg) no-repeat;
+	background-size: 100% 520px;
+}
