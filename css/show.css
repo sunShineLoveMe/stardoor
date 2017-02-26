@@ -23,3 +23,31 @@
 	background:url(../images/3.jpg) no-repeat;
 	background-size: 100% 520px;
 }
+
+.slider-pic1 {
+	right: -700px;
+	top: 100px;
+	position: relative;
+	font-size: 22px;
+}
+
+.slider-pic1 .index {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #000;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	/*font-weight: bold;*/
+}
+
+.slider-pic1 .pic1-title {
+	font-size: 24px;
+}
+
+.slider-pic1 .pic1-content {
+	color: red;
+	font-weight: bold;
+}
